@@ -1,0 +1,144 @@
+
+table.dataGrid
+{
+	border-collapse: collapse;
+	width: 100%;
+	color: #fff;
+}
+
+table.dataGrid a, table.dataGrid a:visited
+{
+	color: #aebbc1;
+}
+
+table.dataGrid th, table.dataGrid td
+{
+	padding: 0.4em;
+}
+
+table.dataGrid th
+{
+	border-bottom: 1px solid #7d7d7d;
+	background-color: #41464b;
+	color: #fff;
+}
+
+table.dataGrid tbody
+{
+	border: 1px solid #7d7d7d;
+}
+
+table.dataGrid td
+{
+	border-bottom: 1px solid #7d7d7d;
+}
+
+table.dataGrid tr.bold
+{
+	font-weight: bold;
+}
+
+table.dataGrid th.tablesorter-headerAsc,
+table.dataGrid th.tablesorter-headerDesc {
+	color: blue;
+	/* background-color: #D2E3FB; */
+}
+
+/**********************************************/
+
+table.dataGrid2
+{
+	border-collapse: collapse;
+	width: 100%;
+	color: #fff;
+        background-color: #41464b;
+}
+
+/*table.dataGrid2 a, table.dataGrid2 a:visited
+{
+	color: #aebbc1;
+}*/
+
+table.dataGrid2 th, table.dataGrid2 td
+{
+	padding: 0.4em;
+	margin: 0.1em;
+}
+
+table.dataGrid2 th
+{
+}
+
+table.dataGrid2 tbody
+{
+	border: 1px solid #7d7d7d;
+}
+
+table.dataGrid2 td
+{
+	border-bottom: 1px solid #7d7d7d;
+}
+
+table.dataGrid2 thead tr .header {
+/*	background-image: url(/images/ui/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;*/
+	cursor: pointer;
+}
+
+table.dataGrid2 thead tr .headerSortUp {
+	background-image: url(/images/ui/asc.gif);
+}
+
+table.dataGrid2 thead tr .headerSortDown {
+	background-image: url(/images/ui/desc.gif);
+}
+
+table.dataGrid2 th.tablesorter-headerAsc,
+table.dataGrid2 th.tablesorter-headerDesc {
+	color: #d92b13;
+	/* background-color: #D2E3FB; */
+}
+
+/**********************************************/
+table.reportgrid1
+{
+	background: white;
+	border-collapse: collapse;
+}
+
+table.reportgrid1 th, table.reportgrid1 td
+{
+	font-size: 0.9em;
+	padding: 0.2em;
+}
+
+table.reportgrid1 th
+{
+	background: #41464b;
+	text-align: left;
+	padding: .5em 0.4em .5em 0.4em;
+}
+
+table.reportgrid1 tr.odd
+{
+	background: #41464b;
+}
+
+table.reportgrid1 tr.bold
+{
+	font-weight: bold;
+}
+
+/**********************************************/
+
+.ssrow:hover
+{
+	background-color: #41464b;
+}
+
+.ssselected
+{
+	background-color: #41464b;
+}
+

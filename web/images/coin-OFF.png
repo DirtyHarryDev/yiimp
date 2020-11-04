@@ -1,0 +1,11 @@
+--2015-07-03 19:15:57--  https://www.cryptopia.co.nz/Content/Images/Coins/OFF-small.png
+Resolving www.cryptopia.co.nz (www.cryptopia.co.nz)... 209.188.31.47
+Connecting to www.cryptopia.co.nz (www.cryptopia.co.nz)|209.188.31.47|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16260 (16K) [image/png]
+Saving to: ‘OFF-small.png’
+
+     0K .......... .....                                      100%  278M=0s
+
+2015-07-03 19:15:57 (278 MB/s) - ‘OFF-small.png’ saved [16260/16260]
+

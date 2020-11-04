@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteOptions Inherit
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*) index.php?r=$1 [QSA]
+
