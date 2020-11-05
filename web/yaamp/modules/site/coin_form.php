@@ -364,7 +364,7 @@ if (empty($coin->program))
 else if (empty($coin->conf_folder))
 {
     $program = substr($coin->program, 0, -1);
-    $coin->conf_folder = "/home/crypto-data/wallets/.$program";
+    $coin->conf_folder = "/home/yiimp-data/wallets/.$program";
     echo CUFHtml::openActiveCtrlHolder($coin, 'conf_folder');
     echo CUFHtml::activeLabelEx($coin, 'conf_folder');
     echo CUFHtml::activeTextField($coin, 'conf_folder', array(
