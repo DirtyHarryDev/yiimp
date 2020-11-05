@@ -431,7 +431,7 @@ echo '<p class="formHint2">add -reindex if coin fails to start.</p>';
 echo CHtml::closetag("pre");
 
 echo CHtml::tag("hr");
-echo "<b>Daemon Commands</b>:";
+echo "<b>Coin Daemon Commands</b>:";
 echo "<b>You MUST use this format or coins will not work!</b>:";
 echo CHtml::opentag("pre");
 echo "To START a coind:\n";
