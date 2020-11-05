@@ -32,7 +32,7 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600) . " hours";
 
 <center>
 <ul>
-<li><b>Welcome to your new mining pool, domain!</b></li>
+<li><b>Welcome to your new mining pool, domain !</b></li>
 <li>This installation was completed using the Dirty Harry Yiimp Server Installer.</li>
 <li>Any edits to this page should be made to, /home/yiimp-data/yiimp/site/web/yaamp/modules/site/index.php</li>
 <li>&nbsp;</li>
@@ -144,7 +144,7 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600) . " hours";
 <ul>
 <li><b>Your WALLET ADDRESS must be valid for the currency you mine</b>!</li>
 <li><b>DO NOT USE a BTC address here, the auto exchange is disabled on these stratums</b>!</li>
-<li>See the "dh-pool.xyz coins" area on the right for PORT numbers. You may mine any coin regardless if the coin is enabled or not for autoexchange. Payouts will only be made in that coins currency.</li>
+<li>See the "domain Coins" area on the right for PORT numbers. You may mine any coin regardless if the coin is enabled or not for autoexchange. Payouts will only be made in that coins currency.</li>
 <br>
 </ul>
 </div></div></center><br>
