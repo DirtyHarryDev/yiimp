@@ -513,16 +513,16 @@ if ($coin->id)
         $dedport = $coin->dedicatedport;
         echo "echo '\n";
         echo " \n";
-        echo "daemon=1\n";
-        echo "server=1\n";
-        echo "listen=1\n";
-        echo "txindex=1\n";
-        echo "rpcuser={$coin->rpcuser}\n";
-        echo "rpcpassword={$coin->rpcpasswd}\n";
-        echo "rpcport={$coin->rpcport}\n";
-        echo "rpcthreads=64\n";
-        echo "rpcallowip=127.0.0.1\n";
-        echo "maxconnections=24\n";
+	echo "daemon=1\n";
+	echo "server=1\n";
+	echo "listen=1\n";
+	echo "txindex=1\n";
+	echo "maxconnections=24\n";
+	echo "rpcthreads=64\n";
+	echo "rpcuser={$coin->rpcuser}\n";
+	echo "rpcpassword={$coin->rpcpasswd}\n";
+	echo "rpcallowip=127.0.0.1\n";
+	echo "rpcport={$coin->rpcport}\n";
         if (empty($coin->specifications))
         {
             echo "\n";
@@ -556,17 +556,17 @@ if ($coin->id)
         echo CHtml::tag("hr");
         echo "<b>Add coind to system startup (cron)</b>:";
         echo CHtml::opentag("pre");
-        echo "(crontab -l 2>/dev/null; echo \"@reboot sleep 60 && {$coin->program} -datadir={$coin->conf_folder} -conf=$program.conf -daemon -shrinkdebugfile\") | crontab -\n";
+        echo "(crontab -l 2>/dev/null; echo \"@reboot sleep 60 && {$coin->program} -datadir={$coin->conf_folder} -conf=$program.conf -shrinkdebugfile\") | crontab -\n";
         echo "\n";
         echo '<p class="formHint2">add -reindex if coin fails to start.</p>';
         echo CHtml::closetag("pre");
 
         echo CHtml::tag("hr");
-        echo "<b>Daemon Commands</b>:";
+        echo "<b>Coin Daemon Commands</b>:";
         echo "<b>You MUST use this format or coins will not work!</b>:";
         echo CHtml::opentag("pre");
         echo "To START a coind:\n";
-        echo "{$coin->program} -datadir={$coin->conf_folder} -conf=$program.conf -daemon -shrinkdebugfile\n\n";
+        echo "{$coin->program} -datadir={$coin->conf_folder} -conf=$program.conf -shrinkdebugfile\n\n";
         echo "To STOP a coind:\n";
         echo "{$coin->program} -datadir={$coin->conf_folder} -conf=$program.conf stop\n\n";
         echo "Or if your coin has a -cli (bitcoin-cli) file...\n";
