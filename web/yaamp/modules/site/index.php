@@ -190,10 +190,10 @@ endif;
 
 <ul class="social-icons">
     <li><a href="http://www.discord.com"><img src='/images/discord.png' /></a></li>
-    <li><a href="http://www.twitter.com"><img src='/images/twitter.png' /></a></li>
+    <li><a href="http://www.twitter.com"><img src='/images/Twitter.png' /></a></li>
     <li><a href="mailto:"><img src='/images/email.png' /></a></li>
     <li><a href="http://www.youtube.com"><img src='/images/telegram.png' /></a></li>
-    <li><a href="http://www.github.com"><img src='/images/github.png' /></a></li>
+    <li><a href="http://www.github.com"><img src='/images/Github.png' /></a></li>
 
 </ul>
 
