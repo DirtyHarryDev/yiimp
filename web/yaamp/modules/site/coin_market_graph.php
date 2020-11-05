@@ -120,7 +120,7 @@ function graph_price_data(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 0, shadowDepth: 0,
-			background: '#f0f0f0'
+			background: '#41464b'
 		},
 
 		legend: {
@@ -207,7 +207,7 @@ function graph_balance_data(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 0, shadowDepth: 0,
-			background: '#f0f0f0'
+			background: '#41464b'
 		},
 
 		legend: {
