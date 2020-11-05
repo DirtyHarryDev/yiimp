@@ -1,5 +1,5 @@
 @import "uni-form-generic.css";
-.uniForm fieldset legend{color:#333;font-weight:700;font-size:100%;margin:0;padding:1.5em 0}
+.uniForm fieldset legend{color:#555;font-weight:700;font-size:100%;margin:0;padding:1.5em 0}
 
 .uniForm .ctrlHolder
 {
@@ -25,7 +25,7 @@
 	font-weight: bold;
 	width:15%;
 	margin:.3em 2% 0 0;
-	color: #555;
+	color: #4bb2c5;
 }
 
 .uniForm .inlineLabels .selectInput,.uniForm .inlineLabels select,.uniForm .inlineLabels .textInput,.uniForm .inlineLabels .fileUpload
@@ -46,8 +46,8 @@
 .uniForm .inlineLabels .multiField .blockLabel{float:left;width:26%;margin:0 3% 0 0}
 .uniForm .inlineLabels .multiField .blockLabel .textInput,.uniForm .inlineLabels .multiField .blockLabel .selectInput,.uniForm .inlineLabels .multiField .blockLabel select,.uniForm .multiField .blockLabel .textInput,.uniForm .multiField .blockLabel .selectInput,.uniForm .multiField .blockLabel select,.uniForm .blockLabels .multiField .blockLabel .textInput,.uniForm .blockLabels .multiField .blockLabel .selectInput,.uniForm .blockLabels .multiField .blockLabel select{width:100%;margin:.3em 0 0}
 .uniForm .ctrlHolder textarea:focus,.uniForm .ctrlHolder .textInput:focus{outline:none}
-.uniForm div.focused .formHint{color:#333}
-.uniForm div.focused .formHint2{color:#333}
+.uniForm div.focused .formHint{color:#555}
+.uniForm div.focused .formHint2{color:#555}
 .uniForm .col{width:47.9%;margin:0 2% 20px 0}
 .uniForm .col.first{width:49%;float:left;clear:none}
 .uniForm .col.last{width:49%;float:right;clear:none;margin-right:0}
@@ -90,5 +90,3 @@
 .uniForm .inlineLabels .ctrlHolder .multiField.phoneNum .blockLabel{width:auto}
 .uniForm .inlineLabels .ctrlHolder .multiField .blockLabel #phone_area.textInput,.uniForm .inlineLabels .ctrlHolder .multiField .blockLabel #phone_ccode.textInput{width:40px}
 .uniForm .inlineLabels .ctrlHolder .multiField .blockLabel #phone_num.textInput{width:110px}
-
-
