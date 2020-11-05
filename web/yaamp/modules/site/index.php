@@ -142,8 +142,8 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600) . " hours";
 </tbody></table>
 
 <ul>
-<li><b>Your WALLET ADDRESS must be valid for the currency you mine</b>!</li>
-<li><b>DO NOT USE a BTC address here, the auto exchange is disabled on these stratums</b>!</li>
+<li><b>Your WALLET ADDRESS must be valid for the currency you mine !</b></li>
+<li><b>DO NOT USE a BTC address here, the auto exchange is disabled on these stratums !</b></li>
 <li>See the "domain Coins" area on the right for PORT numbers. You may mine any coin regardless if the coin is enabled or not for autoexchange. Payouts will only be made in that coins currency.</li>
 <br>
 </ul>
