@@ -177,10 +177,7 @@ $('#algo_select').change(function(event)
 
 </td></tr></table>
 
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
+<br>
 
 <script type="text/javascript">
 
@@ -237,7 +234,7 @@ function graph_init_1(data)
 	var t = $.parseJSON(data);
 	var plot1 = $.jqplot('graph_results_1', [t],
 	{
-		title: '<b>Hashrate ({$algo_unit}/s)</b>',
+		title: '<b>Pool Hashrate ({$algo_unit}/s)</b>',
 		axes: {
 			xaxis: {
 				min: dtMin1,
@@ -263,7 +260,8 @@ function graph_init_1(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
@@ -299,7 +297,8 @@ function graph_init_2(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
@@ -335,7 +334,8 @@ function graph_init_3(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
@@ -350,7 +350,7 @@ function graph_init_4(data)
 	var t = $.parseJSON(data);
 	var plot1 = $.jqplot('graph_results_4', [t],
 	{
-		title: '<b>Hashrate ({$algo_unit}/s)</b>',
+		title: '<b>Pool Hashrate ({$algo_unit}/s)</b>',
 		axes: {
 			xaxis: {
 				min: dtMin2,
@@ -376,7 +376,8 @@ function graph_init_4(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
@@ -412,7 +413,8 @@ function graph_init_5(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
@@ -448,7 +450,8 @@ function graph_init_6(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
@@ -463,7 +466,7 @@ function graph_init_7(data)
 	var t = $.parseJSON(data);
 	var plot1 = $.jqplot('graph_results_7', [t],
 	{
-		title: '<b>Hashrate ({$algo_unit}/s)</b>',
+		title: '<b>Pool Hashrate ({$algo_unit}/s)</b>',
 		axes: {
 			xaxis: {
 				min: dtMin3,
@@ -489,7 +492,8 @@ function graph_init_7(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
@@ -525,7 +529,8 @@ function graph_init_8(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
@@ -561,7 +566,8 @@ function graph_init_9(data)
 		grid: {
 			borderWidth: 1,
 			shadowWidth: 2,
-			shadowDepth: 2
+			shadowDepth: 2,
+			background: '#41464b'
 		},
 
 	});
