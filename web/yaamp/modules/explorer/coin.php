@@ -112,8 +112,8 @@ echo <<<end
 <div id="pager" style="float: right; width: 200px; text-align: right; margin-right: 16px; margin-top: 8px;">$pager</div>
 <div id="form" style="width: 660px; height: 50px; overflow: hidden;">
 <form action="{$actionUrl}" method="POST" style="padding-top: 4px; width: 650px;">
-<input type="text" name="height" class="main-text-input" placeholder="Height" style="width: 80px;">
-<input type="text" name="txid" class="main-text-input" placeholder="Transaction hash" style="width: 450px; margin: 4px;">
+<input type="text" name="height" class="main-text-input" placeholder="Block Height" style="width: 80px;">
+<input type="text" name="txid" class="main-text-input" placeholder="TX Hash" style="width: 400px; margin: 4px;">
 <input type="submit" value="Search" class="main-submit-button" >
 </form>
 </div>
@@ -201,7 +201,7 @@ function diff_graph_data(data)
 			borderWidth: 1,
 			shadowWidth: 0,
 			shadowDepth: 0,
-			background: '#ffffff'
+			background: '#41464b'
 		},
 
 		highlighter:
