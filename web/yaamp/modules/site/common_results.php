@@ -639,8 +639,8 @@ foreach ($db_blocks as $db_block) {
     echo '<tr style="background-color: ' . $algo_color . ';">';
     echo '<td width="18px"><img width="16px" src="' . $coin->image . '"></td>';
     $flags = $db_block->segwit ? '&nbsp;<img src="/images/ui/segwit.png" height="8px" valign="center" title="segwit">' : '';
-    echo '<td><b><a href="/site/coin?id=' . $coin->id . '">' . $coin->name . '</a></b>' . $flags . '</td>';
-
+    echo '<td><b><a href="/site/coin?id=' . $coin->id . '" style="color: white">' . $coin->name . '</a></b>' . $flags . '</td>';
+    
     echo '<td align="right" style="font-size: .8em">' . $db_block->amount . ' ' . $coin->symbol . '</td>';
     echo '<td align="right" style="font-size: .8em" title="found ' . $db_block->difficulty_user . '">' . $diff . '</td>';
 
