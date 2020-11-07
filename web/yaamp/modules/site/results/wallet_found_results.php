@@ -28,7 +28,8 @@ span.block.immature { color: white; background-color: #f0ad4e; }
 span.block.exchange { color: white; background-color: #5cb85c; }
 span.block.cleared  { color: white; background-color: gray; }
 span.block2 { padding: 2px; display: inline-block; text-align: center; min-width: 35px; border-radius: 3px; margin-right: 5px; }
-span.block2.solo { color: white;  background-color: #4BB2C5 !important; }
+span.block2.solo { color: white;  background-color: #4ca6b3 !important; }
+span.block2.shared { color: white;  background-color: #4ca6b3 !important; }
 </style>
 <table class="dataGrid2">
 <thead>
@@ -80,8 +81,9 @@ foreach($db_blocks as $db_block)
 
 	echo '<td>';
 	if($db_block->solo == '1') 
-		echo '<span class="block2 solo" title="Block was found by solo miner">solo</span>';
-	else echo '<span></span>'; 
+		echo '<span class="block2 solo" title="Block was found by solo miner">Solo</span>';
+	else 
+                echo '<span class="block2 shared" title="Block was found by shared miners">Shared</span>';
 	echo "</td>";
 
 	echo '<td class="'.strtolower($db_block->category).'">';
