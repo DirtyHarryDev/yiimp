@@ -16,7 +16,7 @@ $(function() {
 	$('#favicon').remove();
 	$('head').append('<link href="{$coin->image}" id="favicon" rel="shortcut icon">');
 	$('span.txid').bind('click', function(el) { toggleRaw(el.target); });
-	$('span.txid:contains("{$txid}")').css('color','darkred');
+	$('span.txid:contains("{$txid}")').css('color','#4ca6b3');
 });
 </script>
 
@@ -317,13 +317,11 @@ $actionUrl = $coin->visible ? '/explorer/' . $coin->symbol : '/explorer/search?i
 
 echo <<<end
 <form action="{$actionUrl}" method="POST" style="padding: 8px; padding-left: 0px;">
-<input type="text" name="height" class="main-text-input" placeholder="block height" style="width: 80px;">
-<input type="text" name="txid" class="main-text-input" placeholder="tx hash" style="width: 450px; margin: 4px;">
+<input type="text" name="height" class="main-text-input" placeholder="Block Height" style="width: 80px;">
+<input type="text" name="txid" class="main-text-input" placeholder="TX Hash" style="width: 400px; margin: 4px;">
 <input type="submit" value="Search" class="main-submit-button">
 </form>
 end;
 
 
-echo '<br><br><br><br><br><br><br><br><br><br>';
-echo '<br><br><br><br><br><br><br><br><br><br>';
 echo '<br><br><br><br><br><br><br><br><br><br>';
