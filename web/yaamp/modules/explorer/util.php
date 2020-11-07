@@ -229,7 +229,8 @@ function versionToAlgo($coin, $version)
         26 => 'qubit',
         27 => 'skunk',
         28 => 'quark',
-        29 => 'x16r'
+        29 => 'x16r',
+        30 => 'x16rv2'
     );
     $algos['RICHX'] = array(
         0 => 'sha256',
@@ -258,7 +259,7 @@ function versionToAlgo($coin, $version)
         2 => 'myr-gr',
         3 => 'x17',
         4 => 'blake2s',
-        10 => 'lyra2v2',
+        10 => 'lyra2v2'
     );
     $algos['XSH'] = array(
         0 => 'scrypt',
@@ -267,7 +268,7 @@ function versionToAlgo($coin, $version)
         3 => 'x17',
         4 => 'blake2s',
         10 => 'lyra2v2',
-        11 => 'x16s',
+        11 => 'x16s'
     );
     $algos['ARG'] = array(
         0 => 'sha256',
@@ -275,7 +276,7 @@ function versionToAlgo($coin, $version)
         2 => 'lyra2v2',
         3 => 'myr-gr',
         4 => 'argon2d',
-        5 => 'yescrypt',
+        5 => 'yescrypt'
     );
     $symbol = $coin->symbol;
     if (!empty($coin->symbol2)) $symbol = $coin->symbol2;
