@@ -12,7 +12,7 @@ function wallet_peers(id)
 </script>
 
 <style type="text/css">
-a.low { color: red; font-weight: bold; }
+a.low { color: 4ca6b3; font-weight: bold; }
 </style>
 
 <br/>
