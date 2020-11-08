@@ -130,7 +130,7 @@ foreach($recents as $addr)
 	$coin = getdbo('db_coins', $user->coinid);
 
 	if($user->username == $username)
-		echo "<tr style='background-color: #e0d3e8;'><td width=24>";
+		echo "<tr style='background-color: #41464b;'><td width=24>";
 	else
 		echo "<tr class='ssrow'><td width=24>";
 
@@ -176,10 +176,7 @@ echo <<<END
 
 </td></tr></table>
 
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
+<br>
 
 <script>
 
@@ -357,7 +354,7 @@ function graph_init_hashrate(data, algo)
 			borderWidth: 1,
 			shadowWidth: 0,
 			shadowDepth: 0,
-			background: '#ffffff'
+			background: '#41464b'
 		},
 
 		highlighter:
@@ -412,7 +409,7 @@ function graph_earnings_init(data)
 			borderWidth: 1,
 			shadowWidth: 0,
 			shadowDepth: 0,
-			background: '#ffffff'
+			background: '#41464b'
 		},
 
 	});
