@@ -26,6 +26,7 @@ span.block { padding: 2px; display: inline-block; text-align: center; min-width:
 span.block.invalid  { color: white; background-color: #d9534f; }
 span.block.immature { color: white; background-color: #f0ad4e; }
 span.block.exchange { color: white; background-color: #5cb85c; }
+span.block.confirmed { color: white; background-color: #5cb85c; }
 span.block.cleared  { color: white; background-color: gray; }
 span.block2 { padding: 2px; display: inline-block; text-align: center; min-width: 35px; border-radius: 3px; margin-right: 5px; }
 span.block2.solo { color: white;  background-color: #4ca6b3 !important; }
@@ -57,7 +58,7 @@ foreach($db_blocks as $db_block)
 	if($db_block->category == 'generated' && !$this->admin) continue; // mature stake income
 
 	if($db_block->category == 'immature')
-		echo "<tr style='background-color: #e0d3e8;'>";
+		echo "<tr style='background-color: #41464b;'>";
 	else
 		echo "<tr class='ssrow'>";
 
@@ -83,7 +84,7 @@ foreach($db_blocks as $db_block)
 	if($db_block->solo == '1') 
 		echo '<span class="block2 solo" title="Block was found by solo miner">Solo</span>';
 	else 
-                echo '<span class="block2 shared" title="Block was found by shared miners">Shared</span>';
+                echo '<span class="block2 shared" title="Block was found by shared miners">Shared</span>'; 
 	echo "</td>";
 
 	echo '<td class="'.strtolower($db_block->category).'">';
