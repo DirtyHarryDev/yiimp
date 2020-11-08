@@ -139,6 +139,8 @@ YAAMP_ALGO g_algos[] =
 	{"lyra2z", lyra2z_hash, 0x100, 0, 0},
 	{"lyra2zz", lyra2zz_hash, 0x100, 0, 0},
 	{"m7m", m7m_hash, 0x10000, 0, 0},
+	{"megabtx", megabtx_hash, 0x100, 0, 0}, /* Bitcore New Algo*/
+	{"megamec", megamec_hash, 0x100, 0, 0}, /* Megacoin New Algo*/
 	{"minotaur", minotaur_hash, 1, 0, 0},
 	{"myr-gr", groestlmyriad_hash, 1, 0, 0}, /* groestl + sha 64 */
 	{"neoscrypt", neoscrypt_hash, 0x10000, 0, 0},
