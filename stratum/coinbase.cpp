@@ -335,6 +335,49 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 		return;
 	}
 
+	else if(strcmp(coind->symbol, "SHROUD") == 0)
+  	{
+      		char script_dests[2048] = { 0 };
+      		char script_payee[128] = { 0 };
+      		char payees[3];
+      		int npayees = (templ->has_segwit_txs) ? 2 : 1;
+     		json_value* shroudnode;
+      		shroudnode = json_get_object(json_result, "shroudnode");
+      		if(!shroudnode && json_get_bool(json_result, "shroudnode_payments")) {
+          		coind->oldmasternodes = true;
+          		debuglog("%s is using old shroudnodes rpc keys\n", coind->symbol);
+          		return;
+      	}
+      	if (shroudnode) {
+          	bool started;
+          	started = json_get_bool(json_result, "shroudnode_payments_started");
+          	const char *payee = json_get_string(shroudnode, "payee");
+          	json_int_t amount = json_get_int(shroudnode, "amount");
+          	if (!payee)
+              		debuglog("coinbase_create failed to get Shroudnode payee\n");
+
+          	if (!amount)
+              		debuglog("coinbase_create failed to get Shroudnode amount\n");
+
+          	if (!started)
+              		debuglog("coinbase_create failed to get Shroudnode started\n");
+
+          	if (payee && amount && started) {
+              		npayees++;
+              		base58_decode(payee, script_payee);
+              		job_pack_tx(coind, script_dests, amount, script_payee);
+          		}
+      		}
+      		sprintf(payees, "%02x", npayees);
+      		trcat(templ->coinb2, payees);
+      		if (templ->has_segwit_txs) strcat(templ->coinb2, commitment);
+      		strcat(templ->coinb2, script_dests);
+      		job_pack_tx(coind, templ->coinb2, available, NULL);
+      		strcat(templ->coinb2, "00000000"); // locktime
+      		coind->reward = (double)available/100000000*coind->reward_mul;
+      		return;
+  	}
+	
 	else if(strcmp(coind->symbol, "GXX") == 0) {
 	  char script_payee[1024];
 
