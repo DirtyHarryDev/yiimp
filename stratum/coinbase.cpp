@@ -369,7 +369,7 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
           		}
       		}
       		sprintf(payees, "%02x", npayees);
-      		trcat(templ->coinb2, payees);
+      		strcat(templ->coinb2, payees);
       		if (templ->has_segwit_txs) strcat(templ->coinb2, commitment);
       		strcat(templ->coinb2, script_dests);
       		job_pack_tx(coind, templ->coinb2, available, NULL);
