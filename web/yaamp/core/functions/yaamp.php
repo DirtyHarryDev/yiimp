@@ -26,6 +26,7 @@ function yaamp_get_algos()
 		'decred',
 		'dedal',
 		'deep',
+		'equihash',
 		'hmq1725',
 		'honeycomb',
 		'keccak',
@@ -156,6 +157,7 @@ function yaamp_get_algo_norm($algo)
 		'argon2d250'	=> 1.0,
 		'argon2d-dyn'	=> 1.0,
 		'argon2d4096'	=> 1.0,
+		'equihash'	=> 1.0,
 		'lyra2'		=> 1.0,
 		'lyra2v2'	=> 1.0,
 		'lyra2v3'	=> 1.0,
@@ -293,6 +295,7 @@ function getAlgoColors($algo)
 		'jeonghash' 	=> '#e2d0d2',
 		'padihash' 	=> '#e2d0d2',
 		'pawelhash' 	=> '#e2d0d2',
+		'equihash'	=> '#006994',
 
         'MN' => '#ffffff', // MasterNode Earnings
         'PoS' => '#ffffff' // Stake
@@ -417,6 +420,7 @@ function getAlgoPort($algo)
 		'jeonghash'   	=> 8660,
 		'padihash'   	=> 8670,
 		'pawelhash'   	=> 8680,
+		'equihash'   	=> 7766,
     );
 
     global $configCustomPorts;
@@ -439,17 +443,13 @@ function yaamp_fee($algo)
 
     /*    $norm = yaamp_get_algo_norm($algo);
     if($norm == 0) $norm = 1;
-
     $hashrate = getdbosql('db_hashrate', "algo=:algo order by time desc", array(':algo'=>$algo));
     if(!$hashrate || !$hashrate->difficulty) return 1;
-
     $target = yaamp_hashrate_constant($algo);
     $interval = yaamp_hashrate_step();
     $delay = time()-$interval;
-
     $rate = controller()->memcache->get_database_scalar("yaamp_pool_rate_coinonly-$algo",
     "select sum(difficulty) * $target / $interval / 1000 from shares where valid and time>$delay and algo=:algo and jobid=0", array(':algo'=>$algo));
-
     //    $fee = round(log($hashrate->hashrate * $norm / 1000000 / $hashrate->difficulty + 1), 1) + YAAMP_FEES_MINING;
     //    $fee = round(log($rate * $norm / 2000000 / $hashrate->difficulty + 1), 1) + YAAMP_FEES_MINING;
     */
