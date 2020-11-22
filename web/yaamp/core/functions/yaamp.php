@@ -26,6 +26,7 @@ function yaamp_get_algos()
 		'decred',
 		'dedal',
 		'deep',
+		'equihash-192',
 		'hmq1725',
 		'honeycomb',
 		'keccak',
@@ -156,6 +157,7 @@ function yaamp_get_algo_norm($algo)
 		'argon2d250'	=> 1.0,
 		'argon2d-dyn'	=> 1.0,
 		'argon2d4096'	=> 1.0,
+		'equihash-192'	=> 1.0,
 		'lyra2'		=> 1.0,
 		'lyra2v2'	=> 1.0,
 		'lyra2v3'	=> 1.0,
@@ -293,6 +295,7 @@ function getAlgoColors($algo)
 		'jeonghash' 	=> '#e2d0d2',
 		'padihash' 	=> '#e2d0d2',
 		'pawelhash' 	=> '#e2d0d2',
+		'equihash-192'	=> '#006994',
 
         'MN' => '#ffffff', // MasterNode Earnings
         'PoS' => '#ffffff' // Stake
