@@ -124,6 +124,10 @@ foreach ($list as $coin) {
                 ->memcache
                 ->set("yiimp-nethashrate-{$coin->symbol}", $network_hash, 60);
         }
+        else
+		{
+		    $network_hash = $coin->difficulty * 0x100000000 / ($min_ttf? $min_ttf: 60);
+		}
     }
     $network_hash = $network_hash ? Itoa2($network_hash) . 'h/s' : '';
 
