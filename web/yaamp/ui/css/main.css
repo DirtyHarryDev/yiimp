@@ -16,6 +16,10 @@ body
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 10pt;
 	background-color: #32373c;
+	background-image: url(/images/base/background.png);
+        background-position: center;
+	background-repeat: no-repeat;
+        background-attachment: fixed;
 }
 
 a, a:visited
