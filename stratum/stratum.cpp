@@ -102,7 +102,6 @@ YAAMP_ALGO g_algos[] =
 	{"argon2d-uis", argon2d_uis_hash, 0x10000, 0, 0 }, // Argon2d Implementation
 	{"argon2m", argon2m_hash, 0x10000, 0, 0},
 	{"astralhash", astralhash_hash, 0x100, 0, 0},
-	{"balloon", balloon_hash, 1, 0, 0},
 	{"bastion", bastion_hash, 1, 0 },
 	{"bcd", bcd_hash, 1, 0, 0},
 	{"bitcore", timetravel10_hash, 0x100, 0, 0},
@@ -139,8 +138,6 @@ YAAMP_ALGO g_algos[] =
 	{"lyra2z", lyra2z_hash, 0x100, 0, 0},
 	{"lyra2zz", lyra2zz_hash, 0x100, 0, 0},
 	{"m7m", m7m_hash, 0x10000, 0, 0},
-	{"megabtx", megabtx_hash, 0x100, 0, 0}, /* Bitcore New Algo*/
-	{"megamec", megamec_hash, 0x100, 0, 0}, /* Megacoin New Algo*/
 	{"minotaur", minotaur_hash, 1, 0, 0},
 	{"myr-gr", groestlmyriad_hash, 1, 0, 0}, /* groestl + sha 64 */
 	{"neoscrypt", neoscrypt_hash, 0x10000, 0, 0},
@@ -181,7 +178,7 @@ YAAMP_ALGO g_algos[] =
 	{"x14", x14_hash, 1, 0, 0},
 	{"x15", x15_hash, 1, 0, 0},
 	{"x16r", x16r_hash, 0x100, 0, 0},
-  {"x16rv2", x16rv2_hash, 0x100, 0, 0},
+        {"x16rv2", x16rv2_hash, 0x100, 0, 0},
 	{"x16rt", x16rt_hash, 0x100, 0, 0},
 	{"x16s", x16s_hash, 0x100, 0, 0},
 	{"x17", x17_hash, 1, 0, 0},
@@ -190,7 +187,7 @@ YAAMP_ALGO g_algos[] =
 	{"x20r", x20r_hash, 0x100, 0, 0},
 	{"x21s", x21s_hash, 0x100, 0, 0},
 	{"x22i", x22i_hash, 1, 0, 0},
-  {"x25x", x25x_hash, 1, 0, 0},
+        {"x25x", x25x_hash, 1, 0, 0},
 	{"xevan", xevan_hash, 0x100, 0, 0},
 	{"yespower", yespower_hash, 0x10000, 0, 0},
 	{"yespowerurx", yespowerurx_hash, 0x10000, 0, 0},
