@@ -394,10 +394,10 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 		if (masternode) {
 			bool started;
 			started = json_get_bool(json_result, "masternode_payments_started");
-			const char *cMNpayee = json_get_string(masternode, "cMNpayee");
+			const char *MNpayee = json_get_string(masternode, "MNpayee");
 			json_int_t amount = json_get_int(masternode, "amount");
 			if (!payee)
-				debuglog("coinbase_create failed to get Masternode cMNpayee\n");
+				debuglog("coinbase_create failed to get Masternode MNpayee\n");
 
 			if (!amount)
 				debuglog("coinbase_create failed to get Masternode amount\n");
@@ -405,21 +405,21 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 			if (!started)
 				debuglog("coinbase_create failed to get Masternode started\n");
 
-			if (cMNpayee && amount && started) {
-				ncMNpayee++;
-				base58_decode(cMNpayee, script_cMNpayee);
-				job_pack_tx(coind, script_dests, amount, script_cMNpayee);
-				//debuglog("%s masternode found %s %u\n", coind->symbol, cMNpayee, amount);
+			if (MNpayee && amount && started) {
+				nMNpayee++;
+				base58_decode(MNpayee, script_MNpayee);
+				job_pack_tx(coind, script_dests, amount, script_MNpayee);
+				//debuglog("%s masternode found %s %u\n", coind->symbol, MNpayee, amount);
 			}
 		}
-		sprintf(cMNpayee, "%02x", ncMNpayee);
-		strcat(templ->coinb2, cMNpayee);
+		sprintf(MNpayee, "%02x", nMNpayee);
+		strcat(templ->coinb2, MNpayee);
 		if (templ->has_segwit_txs) strcat(templ->coinb2, commitment);
 		strcat(templ->coinb2, script_dests);
 		job_pack_tx(coind, templ->coinb2, available, NULL);
 		strcat(templ->coinb2, "00000000"); // locktime
 		coind->reward = (double)available/100000000*coind->reward_mul;
-		//debuglog("%s %d dests %s\n", coind->symbol, ncMNpayee, script_dests);
+		//debuglog("%s %d dests %s\n", coind->symbol, nMNpayee, script_dests);
 		return;
 	}
 	
