@@ -384,7 +384,7 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
         char script_payee[128] = { 0 };
         char payees[3];
         int npayees = (templ->has_segwit_txs) ? 2 : 1;
-        json_value* indexnode;
+        json_value* masternode;
         masternode = json_get_object(json_result, "masternode");
         if(!masternode && json_get_bool(json_result, "masternode_payments")) {
             coind->oldmasternodes = true;
