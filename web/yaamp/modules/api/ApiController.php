@@ -98,7 +98,7 @@ class ApiController extends CommonController
                 "port" => (int) $port,
                 "coins" => $coins,
                 "fees" => (double) $fees,
-                "fees_solo" => (int) $fees_solo,
+                "fees_solo" => (float) $fees_solo, // will respect decimal numbers.
                 "hashrate" => (double) $hashrate,
                 //"hashrate_shared" => (double) $hashrate_shared,
                 //"hashrate_solo" => (double) $hashrate_solo,
